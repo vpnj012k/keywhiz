@@ -154,7 +154,7 @@
       <dependency>
         <groupId>com.google.auto.service</groupId>
         <artifactId>auto-service</artifactId>
-        <version>1.0-rc7</version>
+        <version>1.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.auto.value</groupId>
@@ -582,7 +582,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128
                     </condition>
                     <message>
                       Please install the unlimited strength JCE crypt policy files for your Java
