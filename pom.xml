@@ -256,7 +256,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.13</version>
+        <version>4.13.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -582,7 +582,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128
                     </condition>
                     <message>
                       Please install the unlimited strength JCE crypt policy files for your Java
