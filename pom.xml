@@ -184,7 +184,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>29.0-jre</version>
+        <version>30.0-jre</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.okhttp3</groupId>
@@ -296,7 +296,7 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
-        <version>5.4.3.Final</version>
+        <version>6.0.23.Final</version>
       </dependency>
       <dependency>
         <groupId>org.jooq</groupId>
@@ -582,7 +582,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128
                     </condition>
                     <message>
                       Please install the unlimited strength JCE crypt policy files for your Java
